@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Tasks from 21 to 40</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .chapter {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        .code {
+            font-family: monospace;
+            background-color: #eee;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="chapter" id="chapter-21">
+        <h2>Chapter 21 (Changing Case)</h2>
+        <div class="code">
+            <p>1. Type the characters that are missing from this code:</p>
+            <code>var allLower = userInput.toLowerCase();</code>
+        </div>
+        <div class="code">
+            <p>2. Convert the string represented by x to lower-case and assign the result to the same variable.</p>
+            <code>
+		let x = "Hello World";<br> 
+		x = x.toLowerCase();<br> 
+		console.log(x);
+			</code>
+        </div>
+        <div class="code">
+            <p>3. Convert the string represented by y to upper-case and assign the result to the same variable.</p>
+            <code>
+		let y = "Hello World";<br> 
+		y = y.toUpperCase();<br> 
+		console.log(y);
+			</code>
+        </div>
+        <div class="code">
+            <p>4. Convert the string represented by a variable to lower-case and assign the result to a second variable that hasn't been declared beforehand.</p>
+            <code>
+                let str = "Hello World";<br>
+                let lowerStr = str.toLowerCase();<br>
+                console.log(lowerStr);
+            </code>
+        </div>
+        <div class="code">
+            <p>5. Convert the string represented by an array element to lower-case and assign it to a variable that hasn't been declared beforehand.</p>
+            <code>
+                let arr = ["HELLO", "WORLD"];<br>
+                let lowerElement = arr[0].toLowerCase();<br>
+                console.log(lowerElement);
+            </code>
+        </div>
+        <div class="code">
+            <p>6. Display in an alert the upper-case version of the string represented by a variable.</p>
+            <code>
+                let message = "hello";<br>
+                alert(message.toUpperCase());
+            </code>
+        </div>
+        <div class="code">
+            <p>7. var cityName = “kaRacHi”; Convert the string represented by a cityName in Capitalisation.</p>
+            <code>
+                let cityName = "kaRacHi";<br>
+                let capitalized = cityName.charAt(0).toUpperCase() + cityName.slice(1).toLowerCase();<br>
+                console.log(capitalized);
+            </code>
+        </div>
+    </div>
+
+    <div class="chapter" id="chapter-22-25">
+        <h2>Chapter 22 - 25 (Strings)</h2>
+        <div class="code">
+            <p>1. "captain" has been assigned to variable “sameWords”. You want to slice "ap" out of it.</p>
+            <code>
+                let sameWords = "captain";<br>
+                let slice = sameWords.slice(1, 3);<br>
+                console.log(slice);
+            </code>
+        </div>
+        <div class="code">
+            <p>2. The number of characters in the string will be assigned to the variable.</p>
+            <code>
+                let str = "hello";<br>
+                let length = str.length;<br>
+                console.log(length);
+            </code>
+        </div>
+        <div class="code">
+            <p>3. The string "elephant" has been assigned to the variable animal. Slice the four middle characters out of the string and assign it to the variable seg.</p>
+            <code>
+                let animal = "elephant";<br>
+                let seg = animal.slice(2, 6);<br>
+                console.log(seg);
+            </code>
+        </div>
+        <div class="code">
+            <p>4. Find the number of characters in the string represented by a variable and assign the number to a second variable.</p>
+            <code>
+                let str = "example";<br>
+                let length = str.length;<br>
+                console.log(length);
+            </code>
+        </div>
+        <div class="code">
+            <p>5. Measure how many characters there are in a string and slice all but the first character and last 3 characters of the string.</p>
+            <code>
+                let str = "abcdefgh";<br>
+                let slicedStr = str.slice(1, -3);<br>
+                console.log(slicedStr);
+            </code>
+        </div>
+        <div class="code">
+            <p>6. var text = "To be or not to be."; var indx = text.indexOf("be"); What is the value of indx?</p>
+            <code>
+                let text = "To be or not to be."; <br>
+                let indx = text.indexOf("be"); <br>
+                console.log(indx);
+            </code>
+        </div>
+        <div class="code">
+            <p>7. var text = "To be or not to be."; var indx = text.lastIndexOf("be"); What is the value of indx?</p>
+            <code>
+                let text = "To be or not to be."; <br>
+                let indx = text.lastIndexOf("be"); <br>
+                console.log(indx);
+            </code>
+        </div>
+        <div class="code">
+            <p>8. Find the index of the first character of the last instance of "go" in the string represented by the variable text.</p>
+            <code>
+                let text = "go to go";<br>
+                let indx = text.lastIndexOf("go");<br>
+                console.log(indx);
+            </code>
+        </div>
+        <div class="code">
+            <p>9. Code the first line of an if statement that tests whether a segment with an index represented by indexNum exists in a string.</p>
+            <code>
+                let str = "example";<br>
+                let indexNum = 3;<br>
+                if (str[indexNum] !== undefined) {<br>
+                console.log("Character exists");<br>
+                }
+            </code>
+        </div>
+        <div class="code">
+            <p>10. In this string "abcde", what character is at index 2? (Use charAt)</p>
+            <code>
+                let str = "abcde";<br>
+                let char = str.charAt(2);<br>
+                console.log(char);
+            </code>
+        </div>
+        <div class="code">
+            <p>11. Find the 10th character in the string represented by text and assign it to the variable cha.</p>
+            <code>
+                let text = "This is a long string";<br>
+                let cha = text.charAt(9);<br>
+                console.log(cha);
+            </code>
+        </div>
+        <div class="code">
+            <p>12. Find the last character in the string represented by str and assign it to x.</p>
+            <code>
+                let str = "example";<br>
+                let x = str.charAt(str.length - 1);<br>
+                console.log(x);
+            </code>
+        </div>
+        <div class="code">
+            <p>13. Find the 5th character in a string represented by input and assign it to cha.</p>
+            <code>
+                let input = "abcdef";<br>
+                let cha = input.charAt(4);<br>
+                console.log(cha);
+            </code>
+        </div>
+        <div class="code">
+            <p>14. Code the first line of an if statement that tests whether the 3rd character of a string is a particular character.</p>
+            <code>
+                let str = "hello";<br>
+                if (str.charAt(2) === "l") {<br>
+                console.log("The 3rd character is l");<br>
+                }
+            </code>
+        </div>
+        <div class="code">
+            <p>15. Code a for loop that cycles through all the characters of a string and assigns each character to an element of an array.</p>
+            <code>
+                let str = "hello";<br>
+                let arr = [];<br>
+                for (let i = 0; i < str.length; i++) {<br>
+                arr[i] = str.charAt(i);<br>
+                }<br>
+                console.log(arr);
+            </code>
+        </div>
+        <div class="code">
+            <p>16. In the string represented by reply replace the first instance of "no" with "yes".</p>
+            <code>
+                let reply = "no thanks";<br>
+                let revisedReply = reply.replace("no", "yes");<br>
+                console.log(revisedReply);
+            </code>
+        </div>
+        <div class="code">
+            <p>17. In a string represented by str replace the first instance of "1" with "one" and assign it to newStr.</p>
+            <code>
+                let str = "1st place";<br>
+                let newStr = str.replace("1", "one");<br>
+                console.log(newStr);
+            </code>
+        </div>
+        <div class="code">
+            <p>18. To replace all instances, use global replacement.</p>
+            <code>
+                let x = "banana";<br>
+                let y = x.replace(/a/g, "z");<br>
+                console.log(y);
+            </code>
+        </div>
+    </div>
+
+    <div class="chapter" id="chapter-26">
+        <h2>Chapter 26 (Rounding Numbers)</h2>
+        <div class="code">
+            <p>1. Form a statement that rounds a number to the nearest integer.</p>
+            <code>
+                let num = 4.6;<br>
+                let rounded = Math.round(num);<br>
+                console.log(rounded);
+            </code>
+        </div>
+        <div class="code">
+            <p>2. Round up a number represented by origNum and assign it to roundNum.</p>
+            <code>
+                let origNum = 4.2;<br>
+                let roundNum = Math.ceil(origNum);<br>
+                console.log(roundNum);
+            </code>
+        </div>
+        <div class="code">
+            <p>3. Round down a number represented by origNum and assign it to roundNum.</p>
+            <code>
+                let origNum = 4.8;<br>
+                let roundNum = Math.floor(origNum);<br>
+                console.log(roundNum);
+            </code>
+        </div>
+        <div class="code">
+            <p>4. Round a number represented by a variable and assign the result to a second variable.</p>
+            <code>
+                let num = 7.9;<br>
+                let roundedNum = Math.round(num);<br>
+                console.log(roundedNum);
+            </code>
+        </div>
+        <div class="code">
+            <p>5. Round .5 to 0 and assign it to a variable.</p>
+            <code>
+                let rounded = Math.round(0.5);<br>
+                console.log(rounded);
+            </code>
+        </div>
+    </div>
+
+    <div class="chapter" id="chapter-27">
+        <h2>Chapter 27 (Random Numbers)</h2>
+        <div class="code">
+            <p>1. Convert a random number generated by JavaScript to a number in the range 1 to 50.</p>
+            <code>
+                let random = Math.floor(Math.random() * 50) + 1;<br>
+                console.log(random);
+            </code>
+        </div>
+        <div class="code">
+            <p>2. Generate a random number and assign it to a variable.</p>
+            <code>
+                let randomNum = Math.random();<br>
+                console.log(randomNum);
+            </code>
+        </div>
+        <div class="code">
+            <p>3. Create a dice with pseudo-random number.</p>
+            <code>
+                let dice = Math.floor(Math.random() * 6) + 1;<br>
+                console.log(dice);
+            </code>
+        </div>
+        <div class="code">
+            <p>4. Create a toss (head/tail) with pseudo-random number.</p>
+            <code>
+                let toss = Math.random() < 0.5 ? "Head" : "Tail";<br>
+                console.log(toss);
+            </code>
+        </div>
+    </div>
+
+    <div class="chapter" id="chapter-28-29">
+        <h2>Chapter 28, 29 (Converting Strings)</h2>
+        <div class="code">
+            <p>1. How do you convert a string to an integer in JavaScript?</p>
+            <code>
+                let numStr = "123";<br>
+                let num = parseInt(numStr);<br>
+                console.log(num);
+            </code>
+        </div>
+        <div class="code">
+            <p>2. Write a JavaScript function to convert the string "123" to an integer.</p>
+            <code>
+                function stringToInt(str) {<br>
+                return parseInt(str);<br>
+                }<br>
+                console.log(stringToInt("123"));
+            </code>
+        </div>
+        <div class="code">
+            <p>3. Convert a string containing a decimal number to a floating-point number.</p>
+            <code>
+                let str = "3.14";<br>
+                let floatNum = parseFloat(str);<br>
+                console.log(floatNum);
+            </code>
+        </div>
+        <div class="code">
+            <p>4. Check if a string can be converted to an integer or decimal before performing the conversion.</p>
+            <code>
+                let str = "123.45";<br>
+                if (!isNaN(parseFloat(str)) && isFinite(str)) {<br>
+                console.log("Valid number");<br>
+                } else {<br>
+                console.log("Invalid number");<br>
+                }
+            </code>
+        </div>
+        <div class="code">
+            <p>5. Convert a number to a string.</p>
+            <code>
+                let num = 42;<br>
+                let str = num.toString();<br>
+                console.log(str);
+            </code>
+        </div>
+        <div class="code">
+            <p>6. Write a function to convert the number 42 to a string.</p>
+            <code>
+                function numToStr(num) {<br>
+                return num.toString();<br>
+                }<br>
+                console.log(numToStr(42));
+            </code>
+        </div>
+        <div class="code">
+            <p>7. Convert a string representing a decimal number to an integer.</p>
+            <code>
+                let str = "3.14";<br>
+                let intNum = parseInt(parseFloat(str));<br>
+                console.log(intNum);
+            </code>
+        </div>
+    </div>
+
+    <div class="chapter" id="chapter-30">
+        <h2>Chapter 30 (Controlling the length of decimals)</h2>
+        <div class="code">
+            <p>1. Round a number to 4 places, convert it to a string, and assign it to newNum.</p>
+            <code>
+                let num = 3.1415926535;<br>
+                let newNum = num.toFixed(4);<br>
+                console.log(newNum);
+            </code>
+        </div>
+        <div class="code">
+            <p>2. Round a number to 2 places, convert it to a string, convert it back to a number, and assign it to the same variable.</p>
+            <code>
+                let num = 3.456;<br>
+                num = parseFloat(num.toFixed(2));<br>
+                console.log(num);
+            </code>
+        </div>
+        <div class="code">
+            <p>3. Test whether the number represented by num, rounded to 2 digits and converted to a string, has more than 4 characters in it.</p>
+            <code>
+                let num = 3.456;<br>
+                if (num.toFixed(2).length > 4) {<br>
+                console.log("More than 4 characters");<br>
+                }
+            </code>
+        </div>
+        <div class="code">
+            <p>4. Display the number rounded to 2 decimal places and converted to a string in an alert.</p>
+            <code>
+                let num = 3.14159;<br>
+                alert(num.toFixed(2));
+            </code>
+        </div>
+    </div>
+
+    <div class="chapter" id="chapter-31-34">
+        <h2>Chapter 31 - 34 (Date & Time)</h2>
+        <div class="code">
+            <p>1. Create a new Date object and assign it to dObj.</p>
+            <code>
+                let dObj = new Date();<br>
+                console.log(dObj);
+            </code>
+        </div>
+        <div class="code">
+            <p>2. Create a new Date object, convert it to a string, and assign it to dStr.</p>
+            <code>
+                let dObj = new Date();<br>
+                let dStr = dObj.toString();<br>
+                console.log(dStr);
+            </code>
+        </div>
+        <div class="code">
+            <p>3. Extract the day of the week from a Date object and assign it to day.</p>
+            <code>
+                let d = new Date();<br>
+                let day = d.getDay();<br>
+                console.log(day);
+            </code>
+        </div>
+        <div class="code">
+            <p>4. Alert the current day with array index.</p>
+            <code>
+                let d = new Date();<br>
+                let dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];<br>
+                alert(dayNames[d.getDay()]);
+            </code>
+        </div>
+        <div class="code">
+            <p>5. Extract all parts of the Date and Time and assign it to a variable.</p>
+            <code>
+                let d = new Date();<br>
+                let allParts = {<br>
+                year: d.getFullYear(),<br>
+                month: d.getMonth(),<br>
+                date: d.getDate(),<br>
+                day: d.getDay(),<br>
+                hours: d.getHours(),<br>
+                minutes: d.getMinutes(),<br>
+                seconds: d.getSeconds(),<br>
+                milliseconds: d.getMilliseconds()<br>
+                };<br>
+                console.log(allParts);
+            </code>
+        </div>
+        <div class="code">
+            <p>6. Create a Date object for the last day of the last month of 2020.</p>
+            <code>
+                let later = new Date("2020-12-31");<br>
+                console.log(later);
+            </code>
+        </div>
+        <div class="code">
+            <p>7. Create a Date object for the second day of the second month of 1992.</p>
+            <code>
+                let date = new Date(1992, 1, 2);<br>
+                console.log(date);
+            </code>
+        </div>
+        <div class="code">
+            <p>8. Display the milliseconds elapsed between the reference date and the beginning of 1980.</p>
+            <code>
+                let refDate = new Date("1980-01-01");<br>
+                let now = new Date();<br>
+                let elapsed = now - refDate;<br>
+                alert(elapsed);
+            </code>
+        </div>
+        <div class="code">
+            <p>9. Change the year of a date in JavaScript.</p>
+            <code>
+                let d = new Date();<br>
+                d.setFullYear(2025);<br>
+                console.log(d);
+            </code>
+        </div>
+        <div class="code">
+            <p>10. Write a function to change the month of a given date to January.</p>
+            <code>
+                function changeMonthToJanuary(date) {<br>
+                date.setMonth(0);<br>
+                return date;<br>
+                }<br>
+                let d = new Date();<br>
+                console.log(changeMonthToJanuary(d));
+            </code>
+        </div>
+        <div class="code">
+            <p>11. Change the day of the week for a specific date in JavaScript.</p>
+            <code>
+                let d = new Date();<br>
+                d.setDate(d.getDate() + (7 - d.getDay()));<br>
+                console.log(d);
+            </code>
+        </div>
+        <div class="code">
+            <p>12. Change the minutes of a given time to a specific value.</p>
+            <code>
+                function setMinutes(date, minutes) {<br>
+                date.setMinutes(minutes);<br>
+                return date;<br>
+                }<br>
+                let d = new Date();<br>
+                let minutes = prompt("Enter minutes:");<br>
+                console.log(setMinutes(d, parseInt(minutes)));
+            </code>
+        </div>
+        <div class="code">
+            <p>13. Add a specific number of hours to a given time.</p>
+            <code>
+                function addHours(date, hours) {<br>
+                date.setHours(date.getHours() + hours);<br>
+                return date;<br>
+                }<br>
+                let d = new Date();<br>
+                console.log(addHours(d, 5));
+            </code>
+        </div>
+        <div class="code">
+            <p>14. Create an age calculator.</p>
+            <code>
+                function calculateAge(dateOfBirth) {<br>
+                let today = new Date();<br>
+                let age = today.getFullYear() - dateOfBirth.getFullYear();<br>
+                let monthDifference = today.getMonth() - dateOfBirth.getMonth();<br>
+                if (monthDifference < 0 || (monthDifference === 0 && today.getDate() < dateOfBirth.getDate())) {<br>
+                age--;<br>
+                }<br>
+                return age;<br>
+                }<br>
+                let dob = new Date(1990, 1, 1);<br>
+                console.log(calculateAge(dob));
+            </code>
+        </div>
+    </div>
+
+    <div class="chapter" id="chapter-35-37">
+        <h2>Chapter 35 - 37 (Functions)</h2>
+        <div class="code">
+            <p>1. Code the first line of a function displayAlert.</p>
+            <code>
+                function displayAlert() {<br>
+                alert("This is an alert!");<br>
+                }
+            </code>
+        </div>
+        <div class="code">
+            <p>2. Code a function named askName that prompts the user to "Enter name" and assigns the answer to userName.</p>
+            <code>
+                function askName() {<br>
+                let userName = prompt("Enter name:");<br>
+                console.log(userName);<br>
+                }<br>
+                askName();
+            </code>
+        </div>
+        <div class="code">
+            <p>3. Code a function that calls 2 other functions.</p>
+            <code>
+                function func1() {<br>
+                console.log("Function 1");<br>
+                }<br>
+                function func2() {<br>
+                console.log("Function 2");<br>
+                }<br>
+                function callBoth() {<br>
+                func1();<br>
+                func2();<br>
+                }<br>
+                callBoth();
+            </code>
+        </div>
+        <div class="code">
+            <p>4. Code a function that displays a prompt, "Enter name" and then displays the name in an alert. Call the function.</p>
+            <code>
+                function promptAndAlert() {<br>
+                let name = prompt("Enter name:");<br>
+                alert(name);<br>
+                }<br>
+                promptAndAlert();
+            </code>
+        </div>
+        <div class="code">
+            <p>5. Code the first line of a function named concat that has 3 parameters, the first three letters of the alphabet.</p>
+            <code>
+                function concat(a, b, c) {<br>
+                console.log(a + b + c);<br>
+                }<br>
+                concat('a', 'b', 'c');
+            </code>
+        </div>
+        <div class="code">
+            <p>6. Code a function that has 2 parameters. Concatenate them and assign the result to a variable.</p>
+            <code>
+                function concatenate(str1, str2) {<br>
+                let result = str1 + str2;<br>
+                console.log(result);<br>
+                }<br>
+                concatenate("Hello, ", "World!");
+            </code>
+        </div>
+        <div class="code">
+            <p>7. Code a function that has three parameters. Multiply them and assign them to a variable.</p>
+            <code>
+                function multiply(a, b, c) {<br>
+                let result = a * b * c;<br>
+                console.log(result);<br>
+                }<br>
+                multiply(2, 3, 4);
+            </code>
+        </div>
+        <div class="code">
+            <p>8. Write a function that takes an array of numbers as input and returns the average of those numbers.</p>
+            <code>
+                function average(numbers) {<br>
+                let sum = numbers.reduce((a, b) => a + b, 0);<br>
+                return sum / numbers.length;<br>
+                }<br>
+                console.log(average([1, 2, 3, 4, 5]));
+            </code>
+        </div>
+        <div class="code">
+            <p>9. Write a function that takes two parameters and returns their sum.</p>
+            <code>
+                function sum(a, b) {<br>
+                return a + b;<br>
+                }<br>
+                console.log(sum(5, 3));
+            </code>
+        </div>
+        <div class="code">
+            <p>10. Write a function that takes an array of numbers as input and returns the average of those numbers.</p>
+            <code>
+                function average(numbers) {<br>
+                let sum = numbers.reduce((a, b) => a + b, 0);<br>
+                return sum / numbers.length;<br>
+                }<br>
+                console.log(average([1, 2, 3, 4, 5]));
+            </code>
+        </div>
+        <div class="code">
+            <p>11. Code a function that takes an array of numbers and returns the largest number.</p>
+            <code>
+                function findMax(numbers) {<br>
+                return Math.max(...numbers);<br>
+                }<br>
+                console.log(findMax([1, 5, 3, 9, 2]));
+            </code>
+        </div>
+    </div>
+
+    <div class="chapter" id="chapter-38">
+        <h2>Chapter 38 (Array Methods)</h2>
+        <div class="code">
+            <p>1. Code an array containing 5 numbers and print each number using a loop.</p>
+            <code>
+                let numbers = [1, 2, 3, 4, 5];<br>
+                for (let i = 0; i < numbers.length; i++) {<br>
+                console.log(numbers[i]);<br>
+                }
+            </code>
+        </div>
+        <div class="code">
+            <p>2. Add a number to the end of an array.</p>
+            <code>
+                let numbers = [1, 2, 3];<br>
+                numbers.push(4);<br>
+                console.log(numbers);
+            </code>
+        </div>
+        <div class="code">
+            <p>3. Remove the last number from an array.</p>
+            <code>
+                let numbers = [1, 2, 3, 4];<br>
+                numbers.pop();<br>
+                console.log(numbers);
+            </code>
+        </div>
+        <div class="code">
+            <p>4. Add a number to the beginning of an array.</p>
+            <code>
+                let numbers = [2, 3, 4];<br>
+                numbers.unshift(1);<br>
+                console.log(numbers);
+            </code>
+        </div>
+        <div class="code">
+            <p>5. Remove the first number from an array.</p>
+            <code>
+                let numbers = [1, 2, 3];<br>
+                numbers.shift();<br>
+                console.log(numbers);
+            </code>
+        </div>
+        <div class="code">
+            <p>6. Find the index of a specific value in an array.</p>
+            <code>
+                let numbers = [1, 2, 3, 4];<br>
+                let index = numbers.indexOf(3);<br>
+                console.log(index);
+            </code>
+        </div>
+        <div class="code">
+            <p>7. Create a new array with each element doubled.</p>
+            <code>
+                let numbers = [1, 2, 3];<br>
+                let doubled = numbers.map(x => x * 2);<br>
+                console.log(doubled);
+            </code>
+        </div>
+        <div class="code">
+            <p>8. Filter an array to only include even numbers.</p>
+            <code>
+                let numbers = [1, 2, 3, 4, 5];<br>
+                let evens = numbers.filter(x => x % 2 === 0);<br>
+                console.log(evens);
+            </code>
+        </div>
+        <div class="code">
+            <p>9. Sort an array of numbers in ascending order.</p>
+            <code>
+                let numbers = [4, 2, 5, 1, 3];<br>
+                numbers.sort((a, b) => a - b);<br>
+                console.log(numbers);
+            </code>
+        </div>
+        <div class="code">
+            <p>10. Concatenate two arrays.</p>
+            <code>
+                let array1 = [1, 2, 3];<br>
+                let array2 = [4, 5, 6];<br>
+                let concatenated = array1.concat(array2);<br>
+                console.log(concatenated);
+            </code>
+        </div>
+    </div>
+</div>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+    }
+    .container {
+        width: 80%;
+        margin: auto;
+    }
+    .chapter {
+        margin-bottom: 20px;
+    }
+    .code {
+        background: #f4f4f4;
+        padding: 10px;
+        border-left: 3px solid #007bff;
+        margin-bottom: 10px;
+    }
+    .code p {
+        margin: 0;
+        padding: 0;
+    }
+    code {
+        display: block;
+        white-space: pre-wrap;
+        background: #e9ecef;
+        padding: 10px;
+        border: 1px solid #ddd;
+    }
+    h1, h2 {
+        color: #007bff;
+    }
+</style>
+</body>
+</html>
