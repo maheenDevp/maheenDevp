@@ -2,7 +2,8 @@ Stopwatch app code using HTML CSS and Javascript
 
 # Stopwatch Application
 
-![Stopwatch Screenshot](stopwatchh.png)
+![Stopwatch Screenshot](https://github.com/maheenDevp/maheenDevp/blob/main/Stopwatch%20app/stopwatchh.PNG)
+
 
 ## Description
 
