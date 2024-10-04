@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="main-div">
+            <h1>TIMER</h1>
+            <div id="time-display">
+                <span id="min">00</span>:<span id="sec">00</span>:<span id="milli">00</span>
+            </div>
+            <input type="number" id="input-min" placeholder="Minutes" min="0" />
+            <input type="number" id="input-sec" placeholder="Seconds" min="0" />
+            <div class="buttons">
+                <button id="start">Start</button>
+                <button id="stop">Stop</button>
+                <button id="reset">Reset</button>
+            </div>
+            <p id="message"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
