@@ -16,7 +16,7 @@ This is a simple stopwatch application that allows users to start, stop, and res
 - Reset the stopwatch
 - Display in milliseconds
 
-> **View the HTML File**: [index.html](index.html)
+> **View the Stopwatch App**: [Stopwatch app](https://github.com/maheenDevp/maheenDevp/blob/main/Stopwatch%20app/index.html)
 
 ## Features
 
