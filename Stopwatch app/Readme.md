@@ -15,3 +15,12 @@ This is a simple stopwatch application that allows users to start, stop, and res
 - Stop the stopwatch
 - Reset the stopwatch
 - Display in milliseconds
+
+> **View the HTML File**: [index.html](index.html)
+
+## Features
+
+- Start the stopwatch
+- Stop the stopwatch
+- Reset the stopwatch
+- Display in milliseconds
